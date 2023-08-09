@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <input type="radio" id="id1" onclick="tb(1)" name="t"><label for="id1">1</label>
+    <input type="radio" id="id2" onclick="tb(2)" name="t"><label for="id2">2</label>
+    <input type="radio" id="id3" onclick="tb(3)" name="t"><label for="id3">3</label>
+    <input type="radio" id="id4" onclick="tb(4)" name="t"><label for="id4">4</label>
+    <input type="radio" id="id5" onclick="tb(5)" name="t"><label for="id5">5</label>
+    <input type="radio" id="id6" onclick="tb(6)" name="t"><label for="id6">6</label>
+    <input type="radio" id="id7" onclick="tb(7)" name="t"><label for="id7">7</label>
+    <input type="radio" id="id8" onclick="tb(8)" name="t"><label for="id8">8</label>
+    <input type="radio" id="id9" onclick="tb(9)" name="t"><label for="id9">9</label>
+    <input type="radio" id="id" onclick="tb(10)" name="t"><label for="id">10</label>
+    <div id="one">
+    </div>
+    <script>
+        function tb(x){
+            document.getElementById('one').innerHTML="";
+            for(let i=1;i<=10;i++)
+            {
+                var el=document.createElement('p');
+                el.innerHTML=i*x;   
+                document.getElementById('one').appendChild(el);         
+            }
+        }
+    </script>
+</body>
+
+</html>
